@@ -1,0 +1,84 @@
+.page {
+    top: 0;
+    width: 100vw;
+}
+
+.page > h2 {
+    text-align: center;
+    color: #f1f1f1;
+    font-weight: 400;
+}
+
+.calendar {
+    width: 80vw;
+    height: 52vh;
+    padding: 50px 0;
+    background-color: #e3e1e1;
+    border-radius: 25px;
+    box-shadow: 2px 2px 1px 0.1px black; 
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.datePicker {
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.datePicker p {
+    font-weight: 500;
+    font-size: medium;
+}
+
+.events {
+    margin: auto;
+    width: 60%;
+    height: 80%;
+}
+
+.eventList {
+    background-color: rgba(219, 232, 254, 0.834);
+    height: 350px;
+    border-radius: 25px;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    overflow: scroll;
+    text-align: center;
+}
+
+.event {
+    margin: 10px;
+}
+
+
+@media (max-width: 912px) {
+    .calendar {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .datePicker {
+        width: 90%;
+    }
+
+    .events {
+        width: 90%;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .eventList {
+        height: fit-content;
+    }
+}
